@@ -48,10 +48,10 @@ namespace LINQ_04_Durchschnitt_von_Kategorien
 
 
 
-            var linqAvg = list.GroupBy(e => e.kategorie).Select(g => new
+            var linqAvg = list.GroupBy(x => x.kategorie).Select(g => new
             {
                 Kategorie = g.Key,
-                Durchschnittspreis = g.Average(e => e.price)
+                Durchschnittspreis = g.Average(x => x.price)
             });
             Console.WriteLine("Durchschnittpreise:");
             foreach (var e in linqAvg)
