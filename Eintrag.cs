@@ -10,12 +10,12 @@ namespace LINQ_04_Durchschnitt_von_Kategorien
     internal class Eintrag
     {
         public string name {  get; set; }
-        public decimal price { get; set; }
+        public decimal preis { get; set; }
         public string kategorie { get; set; }
-        public Eintrag(string name,decimal price,string kategorie)
+        public Eintrag(string name,decimal preis,string kategorie)
         {
             this.name = name;
-            this.price = price;
+            this.preis = preis;
             this.kategorie = kategorie;
         }
         
